@@ -1,0 +1,360 @@
+/*
+              SPACING SYSTEM (px)
+              2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+              FONT SIZE SYSTEM (px)
+              10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+              */
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  line-height: 1.5;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container-1 {
+  width: 1300px;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+/* CSS cho phần Banner */
+#banner {
+  padding: 50px 50px 0 50px;
+}
+.img-banner {
+  background-image: linear-gradient(
+      rgba(40, 40, 40, 0.5),
+      rgba(40, 40, 40, 0.5)
+    ),
+    url(../images/banner.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  position: relative;
+}
+.text-banner {
+  position: absolute;
+  top: 25%;
+  left: 42%;
+  text-align: center;
+  color: #adb5bd;
+}
+.text-banner h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+/* CSS cho phần Navigation Bar */
+.nav--bar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 150px 150px 300px 150px 150px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.nav--bar a:link,
+a:visited {
+  text-decoration: none;
+  border-left: 2px solid #ced4da;
+  padding: 12px;
+  color: #495057;
+  font-weight: 500;
+}
+.nav--bar a:nth-child(2) {
+  border-right: 2px solid #ced4da;
+}
+.nav--bar a:last-child {
+  border-right: 2px solid #ced4da;
+}
+.name-job {
+  font-size: 12px;
+}
+.icon {
+  color: #1c7ed6;
+}
+
+/* CSS cho phần Information */
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  color: #495057;
+}
+.target {
+  background-color: #f1f3f5;
+  padding: 60px 72px 60px 150px;
+  font-size: 14px;
+  height: 400px;
+}
+
+.information h1 {
+  color: #212529;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.personal-info {
+  background-color: #eaecec;
+  padding: 60px 0 60px 60px;
+  font-size: 14px;
+  height: 400px;
+}
+
+.personal-info li {
+  list-style-type: none;
+}
+.personal-info span {
+  font-weight: 600;
+}
+.mt-40 {
+  padding: 0;
+  line-height: 2;
+}
+/* CSS cho phần Thông tin nghề nghiệp */
+
+.job-info {
+  display: grid;
+  margin: 40px 200px;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  gap: 32px;
+  align-items: start;
+}
+.job-info li {
+  list-style-type: "- ";
+}
+
+/* GRID cho phần Kinh nghiệm */
+.exp-job {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+/* GRID cho phần Học vấn */
+.education {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+
+/* GRID cho phần Hoạt động */
+.activities {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+/* GRID cho phần Sở thích */
+.favorite {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+
+/* GRID cho phần Ngôn ngữ */
+.language {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+/* GRID cho phần Kỹ năng */
+.skill {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+
+/* CSS chung cho phần Thông tin nghề nghiệp */
+.items {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  padding-bottom: 36px;
+}
+
+.item--1 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.content-1 p {
+  font-size: 16px;
+  color: rgba(52, 58, 64, 0.8);
+  padding-top: 12px;
+}
+.content-2 {
+  padding: 14px;
+  color: #495057;
+  position: relative;
+}
+.note::before {
+  content: "•";
+  color: #1c7ed6;
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 26px;
+  position: absolute;
+  left: -3%;
+  top: 20%;
+}
+.now a:link,
+a:visited {
+  background-color: #1c7ed6;
+  padding: 4px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.content-3 {
+  color: #495057;
+  line-height: 2;
+}
+
+/* CSS cho phần Sở thích */
+
+.icon--1 {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #1c7ed6;
+  stroke: rgba(28, 127, 214, 0.7);
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+.like2 {
+  grid-column: 1/-1;
+}
+
+/* CSS cho phần Ngôn ngữ */
+.good {
+  display: inline-block;
+  background-color: #1c7ed6;
+  width: 40px;
+  height: 3px;
+}
+.bad {
+  display: inline-block;
+  background-color: #ced4da;
+  width: 40px;
+  height: 3px;
+}
+
+/* CSS cho phần Chứng chỉ - Giải thưởng */
+.award {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 30px;
+  padding-top: 30px;
+}
+.img-cc {
+  width: 200px;
+  margin-right: 10px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.cer-content {
+  display: flex;
+  gap: 20px;
+}
+.cer-content2 {
+  padding-left: 24px;
+  border-left: 2px solid #ffd8a8;
+}
+.cer-content3 {
+  padding-top: 24px;
+  border-top: 2px solid #ffd8a8;
+  grid-column: 1/-1;
+}
+
+/* CSS cho phần Dự án */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 24px;
+}
+.project-1 {
+  display: flex;
+  flex-direction: column;
+}
+.img-cv {
+  width: 100%;
+}
+.project-title {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 540;
+  color: #343a40;
+  border-top: 1px solid #d3dae0;
+  border-left: 1px solid #d3dae0;
+  border-right: 1px solid #d3dae0;
+}
+.project-border {
+  padding: 12px;
+  border-left: 1px solid #d3dae0;
+  border-right: 1px solid #d3dae0;
+  border-top: 1px solid #d3dae0;
+  color: #848a91;
+}
+.year {
+  background-color: #339af0;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+table {
+  border-collapse: collapse;
+  color: #848a91;
+}
+td {
+  padding: 10px;
+  font-size: 14px;
+}
+tr td:first-child {
+  width: 100px;
+  vertical-align: top;
+}
+tr {
+  border: 1px solid #d3dae0;
+}
+
+/* CSS cho phần Footer */
+.footer {
+  text-align: center;
+}
+.footer li {
+  display: inline-block;
+  padding: 12px;
+
+  text-decoration: none;
+}
+.footer a {
+  text-decoration: none;
+  color: #868e96;
+}
+.footer i {
+  font-size: 24px;
+  color: #1c7ed6;
+}
+
+/* Phần nâng cao: thêm Avatar */
+.img-ava {
+  width: 170px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #fff;
+}
+.ava-banner {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, -80%);
+}

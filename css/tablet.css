@@ -1,0 +1,30 @@
+@media (max-width: 1024px) {
+  .name-job {
+    display: none;
+  }
+  .ava-banner {
+    display: none;
+  }
+
+  .nav--bar {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .target {
+    padding: 60px 32px;
+  }
+  .cer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .project-title {
+    font-size: 14px;
+  }
+  .project-border {
+    font-size: 14px;
+  }
+
+  tr td:first-child {
+    width: 25%;
+  }
+}

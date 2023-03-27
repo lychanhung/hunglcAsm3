@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+  .nav--bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav--bar a:link,
+  a:visited {
+    border: none;
+  }
+  .information {
+    grid-template-columns: 1fr;
+  }
+
+  .cer-content2 {
+    border-left: none;
+    border-top: 2px solid #ffd8a8;
+    padding-top: 24px;
+  }
+}
